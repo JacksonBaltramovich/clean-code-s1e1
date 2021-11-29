@@ -38,14 +38,14 @@ body {
   display: flex;
 }
 #body__incomplete_task_list, #completed__tasks_list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .edit__mode, .body__content_todo-title, .body__content_completed_title {
-  list-style:none;
+  list-style: none;
 }
 #inputs, #buttons{
-  outline:none;
+  outline: none;
 }
 #buttons {
   background: none;
@@ -138,14 +138,14 @@ ul#completed__tasks_list label {
 
 /* Edit Task */
 ul li input[type=text] {
-  display:none
+  display: none
 }
 
 ul li.edit__mode input[type=text] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 ul li.edit__mode label {
-  display:none;
+  display: none;
 }
