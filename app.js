@@ -8,10 +8,10 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("new-task");//Add a new task.
+var taskInput=document.getElementById("body__content_lbl");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.getElementById("body__incomplete_task_list");//ul of #incompleteTasks
+var completedTasksHolder=document.getElementById("completed__tasks_list");//completed-tasks
 
 
 //New task list item
@@ -19,18 +19,25 @@ var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
 
+    //listItem.className = "edit__mode";
+
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
+    checkBox.id = "inputs";
     //label
     var label=document.createElement("label");//label
     //input (text)
     var editInput=document.createElement("input");//text
+    editInput.id = "inputs";
     //button.edit
     var editButton=document.createElement("button");//edit button
+    editButton.id = "buttons";
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
+    deleteButton.id = "buttons";
     var deleteButtonImg=document.createElement("img");//delete button image
+    deleteButtonImg.id = "delete__img";
 
     label.innerText=taskString;
     label.className='task';
@@ -85,7 +92,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("editMode");
+    var containsClass=listItem.classList.contains("edit__mode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -99,7 +106,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("editMode");
+    listItem.classList.toggle("edit__mode");
 };
 
 
