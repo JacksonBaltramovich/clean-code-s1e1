@@ -18,8 +18,11 @@ body {
 }
 
 @media (max-width:768px) {
-.header__instruct { text-align: center;
+
+.header__instruct { 
+  text-align: center;
 }
+
 }
 .body__content {
   display: block;
@@ -129,7 +132,7 @@ button.delete img:hover {
 
 /* Completed */
 ul#completed__tasks_list label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
