@@ -10,10 +10,12 @@ body {
   display: block;
   text-align: right;
 }
-.header__instruct img {
+.header__instruct 
+img {
   width: 100%;
 }
-.header__instruct .header__instruction_link {
+.header__instruct, 
+.header__instruction_link {
   font-family: fantasy, cursive;
 }
 
@@ -37,14 +39,18 @@ body {
 .body__content_wrap {
   display: flex;
 }
-#body__incomplete_task_list, #completed__tasks_list {
+#body__incomplete_task_list, 
+#completed__tasks_list {
   margin: 0;
   padding: 0px;
 }
-.edit__mode, .body__content_todo-title, .body__content_completed_title {
+.edit__mode, 
+.body__content_todo-title, 
+.body__content_completed_title {
   list-style: none;
 }
-#inputs, #buttons{
+#inputs, 
+#buttons{
   outline: none;
 }
 #buttons {
@@ -60,7 +66,8 @@ body {
   color: #3a3a3a;
 }
 /* Heading */
-.body__content_todo-title, .body__content_completed_title,
+.body__content_todo-title, 
+.body__content_completed_title,
 label[for="body__content_label"] {
   color: #333;
   font-weight: 700;
@@ -91,7 +98,7 @@ label[for="body__content_label"] {
   display: block;
   margin: 0 0 20px;
 }
-input#body__content_label {
+#body__content_label {
   width: 318px;
 }
 
@@ -121,12 +128,12 @@ li > label {
 li >    input[type="text"] {
   width: 226px;
 }
-button.delete img {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete img:hover {
   transform: rotateZ(0);
 }
 
