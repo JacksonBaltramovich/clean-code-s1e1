@@ -13,7 +13,7 @@ body {
 .header__instruct img {
   width: 100%;
 }
-.header__instruct .header__instruct_link {
+.header__instruct .header__instruction_link {
   font-family: fantasy, cursive;
 }
 
@@ -34,17 +34,17 @@ body {
 .body__content_wrap {
   display: flex;
 }
-ul {
+#body__incomplete_task_list, #completed__tasks_list {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.edit__mode, .body__content_todo-title, .body__content_completed_title {
   list-style:none;
 }
-input,button{
+#inputs, #buttons{
   outline:none;
 }
-button {
+#buttons {
   background: none;
   border: 0px;
   color: #888;
@@ -53,12 +53,12 @@ button {
   font-family: lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+#buttons:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="body__content_lbl"] {
+.body__content_todo-title, .body__content_completed_title,
+label[for="body__content_label"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -84,11 +84,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="body__content_lbl"] {
+label[for="body__content_label"] {
   display: block;
   margin: 0 0 20px;
 }
-input#body__content_lbl {
+input#body__content_label {
   width: 318px;
 }
 

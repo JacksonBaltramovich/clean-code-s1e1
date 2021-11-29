@@ -19,18 +19,25 @@ var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
 
+    //listItem.className = "edit__mode";
+
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
+    checkBox.id = "inputs";
     //label
     var label=document.createElement("label");//label
     //input (text)
     var editInput=document.createElement("input");//text
+    editInput.id = "inputs";
     //button.edit
     var editButton=document.createElement("button");//edit button
+    editButton.id = "buttons";
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
+    deleteButton.id = "buttons";
     var deleteButtonImg=document.createElement("img");//delete button image
+    deleteButtonImg.id = "delete__img";
 
     label.innerText=taskString;
     label.className='task';

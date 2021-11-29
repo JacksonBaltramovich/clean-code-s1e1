@@ -18,29 +18,29 @@
           <label for="body__content_lbl">Add Item</label>
           <div class="body__content_wrap">
             <input id="body__content_lbl" class="task" type="text">
-            <button>Add</button>
+            <button id="buttons">Add</button>
           </div>
         </p>
       </section>
       <h3 class="body__content_todo-title">Todo</h3>
       <section>
         <ul id="body__incomplete_task_list">
-          <li>
-            <input type="checkbox">
+          <li">
+            <input type="checkbox" id="inputs">
             <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg">
+            <input type="text" class="task" id="inputs">
+            <button class="edit" id="buttons">Edit</button>
+            <button class="delete" id="buttons">
+              <img src="./remove.svg" id="delete__img">
             </button>
           </li>
-          <li class="edit__mode">
-            <input type="checkbox">
+          <li>
+            <input type="checkbox" id="inputs">
             <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete">
-              <img src="./remove.svg">
+            <input type="text" value="Go Shopping" class="task" id="inputs">
+            <button class="edit" id="buttons">Save</button>
+            <button class="delete" id="buttons">
+              <img src="./remove.svg" id="delete__img">
             </button>
           </li>
         </ul>
@@ -49,12 +49,12 @@
       <section>
         <ul id="completed__tasks_list">
           <li>
-            <input type="checkbox" checked>
+            <input id="inputs" type="checkbox" checked>
             <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg">
+            <input type="text" class="task" id="inputs">
+            <button class="edit" id="buttons">Edit</button>
+            <button class="delete" id="buttons">
+              <img src="./remove.svg" id="delete__img">
             </button>
           </li>
         </ul>
