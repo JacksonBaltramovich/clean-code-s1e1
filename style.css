@@ -4,21 +4,21 @@ body {
   color: #333;
   font-family: lato, sans-serif;
 }
-.header__instruction {
+.header__instruct {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.header__instruction img {
+.header__instruct img {
   width: 100%;
 }
-.header__instruction .header__instruction_link {
+.header__instruct .header__instruct_link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.header__instruction { text-align: center;
+.header__instruct { text-align: center;
 }
 }
 .body__content {
@@ -31,7 +31,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.body__content_wrapper {
+.body__content_wrap {
   display: flex;
 }
 ul {
@@ -58,7 +58,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="body__content_label"] {
+label[for="body__content_lbl"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -84,11 +84,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="body__content_label"] {
+label[for="body__content_lbl"] {
   display: block;
   margin: 0 0 20px;
 }
-input#body__content_label {
+input#body__content_lbl {
   width: 318px;
 }
 
